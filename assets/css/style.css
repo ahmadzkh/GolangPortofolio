@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.glass {
+    background: rgb(4, 27, 53);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    background: rgb(4, 27, 53);
+    box-shadow: 0px 0px 50px 0px rgba(31, 38, 135, 0.603);
+}
+
+.container-fluid .section {
+    width: 100%;
+    max-height: max-content;
+    padding: 100px 50px 100px 50px;
+    gap: 100px;
+}
+
+.container-fluid #intro {
+    padding-top: 250px;
+}
+
+.container-fluid #intro h1 {
+    font-size: 50px;
+}
