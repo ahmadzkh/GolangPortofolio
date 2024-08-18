@@ -1,0 +1,62 @@
+{{ define "contact" }}
+<!-- Content Contact Me Start -->
+<div class="section d-flex flex-column gap-5 rounded" id="contact">
+      <div class="row my-5 d-flex justify-content-center">
+            <div class="col-md text-center">
+                  <a href="{{ .linkedin }}" target="_blank" class="btn btn-outline-primary text-decoration-none">
+                        <i class="bi bi-linkedin text-secondary" style="font-size: 2rem;">
+                              <span class="mx-1 text-secondary">Linkedin</span>
+                        </i>
+                  </a>
+            </div>
+            <div class="col-md text-center">
+                  <a href="{{ .instagram }}" target="_blank" class="btn btn-outline-primary text-decoration-none">
+                        <i class="bi bi-instagram text-secondary" style="font-size: 2rem;">
+                              <span class="mx-1 text-secondary">Instagram</span>
+                        </i>
+                  </a>
+            </div>
+            <div class="col-md text-center">
+                  <a href="{{ .twitter }}" target="_blank" class="btn btn-outline-primary text-decoration-none">
+                        <i class="bi bi-twitter text-secondary" style="font-size: 2rem;">
+                              <span class="mx-1 text-secondary">Twitter</span>
+                        </i>
+                  </a>
+            </div>
+            <div class="col-md text-center">
+                  <a href="{{ .faceboo }}" target="_blank" class="btn btn-outline-primary text-decoration-none">
+                        <i class="bi bi-facebook text-secondary" style="font-size: 2rem;">
+                              <span class="mx-1 text-secondary">Facebook</span>
+                        </i>
+                  </a>
+            </div>
+      </div>
+      <div class="row d-flex">
+            <h1 class="text-center mb-5">Contact Me</h1>
+            <div class="d-flex justify-content-center">
+                  <form action="/submit" method="post" class="w-50">
+                        <div class="mb-4">
+                              <label for="name" class="form-label">Name</label>
+                              <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Masukkan nama anda" required>
+                        </div>
+                        <div class="mb-4">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Masukkan alamat email anda" required>
+                        </div>
+                        <div class="mb-4">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea id="message" name="message" class="form-control" rows="5"
+                                    placeholder="Masukkan pesan anda" required></textarea>
+                        </div>
+                        <div class="text-center">
+                              <button type="submit" class="btn btn-outline-primary w-100 p-3 my-3">Submit <i
+                                          class="bi bi-send mx-1"></i></button>
+                        </div>
+                  </form>
+            </div>
+      </div>
+</div>
+<!-- Content Contact Me End-->
+{{ end }}

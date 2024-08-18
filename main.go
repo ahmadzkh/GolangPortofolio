@@ -1,3 +1,11 @@
+/**
+ * File main.go
+ *
+ * This is the main entry point for the web application.
+ * It sets up the HTTP server, routes, and handlers.
+ *
+ * @ahmadzkh
+ */
 package main
 
 import (
@@ -9,7 +17,8 @@ import (
 func main() {
 	mux := http.NewServeMux()
 
-	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
+	mux.Handle("/assets/",
+		http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 
 	mux.HandleFunc("/", handler.HomeHandler)
 

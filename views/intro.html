@@ -1,0 +1,76 @@
+{{ define "intro" }}
+<!-- Content Intro Start -->
+<div class="section d-flex flex-column align-items-center" id="intro">
+      <div class="row w-75 gap-5 mb-5 justify-content-between align-items-center">
+            <div class="col-md-7">
+                  <div class="text">
+                        <h1 data-aos="fade-down" data-aos-offset="0" data-aos-delay="100" data-aos-duration="1000"
+                              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
+                              class="fw-bolder">
+                              {{ .name }}
+                        </h1>
+                        <hr class="w-100 text-primary" data-aos="fade-left" data-aos-offset="0" data-aos-delay="100"
+                              data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                              data-aos-once="true">
+                        <p data-aos="fade" data-aos-offset="0" data-aos-delay="500" data-aos-duration="1000"
+                              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                              <span class=" text-secondary lh-lg my-3" style="font-size: 1.29rem;">
+                                    {{ .description }}
+                              </span>
+                        </p>
+                  </div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                        <a href="https://wa.me/{{ .myPhone }}/" target="_blank" rel="noopener noreferrer"
+                              class="btn btn-outline-success w-100 mt-5">
+                              <h2 class="g-0 p-2 m-0">Let's Get Started <i class="bi bi-chevron-compact-right"></i>
+                              </h2>
+                        </a>
+                  </div>
+            </div>
+            <div class="col-md d-flex justify-content-end">
+                  <img src="{{ .imageProfile }}" class="glass rounded-circle" draggable="false" data-aos="fade-right"
+                        data-aos-offset="0" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="true" alt="" height="400px">
+            </div>
+      </div>
+      <div class="row w-100 my-5 d-flex justify-content-center align-items-center">
+            <div class="col-md text-center" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500"
+                  data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                  <div class="text-secondary">
+                        <!-- Logo Laravel SVG -->
+                        <img src="{{ .vscodeLogo }}" alt="vscode" style="width: 6rem;" class=" opacity-75">
+                  </div>
+            </div>
+            <div class="col-md text-center" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500"
+                  data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                  <div class="text-secondary">
+                        <!-- Logo Laravel SVG -->
+                        <img src="{{ .phpLogo }}" alt="php" style="width: 10rem;" class=" opacity-75">
+                  </div>
+            </div>
+            <div class="col-md text-center" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500"
+                  data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                  <div class="text-secondary">
+                        <!-- Logo Laravel SVG -->
+                        <img src="{{ .golangLogo }}" alt="golang" style="width: 10rem;" class=" opacity-75">
+                  </div>
+            </div>
+            <div class="col-md text-center" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500"
+                  data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                  <div class="text-secondary">
+                        <!-- Logo Laravel SVG -->
+                        <img src="{{ .pythonLogo }}" alt="python" style="width: 5rem;" class=" opacity-75">
+                  </div>
+            </div>
+            <div class="col-md text-center" data-aos="zoom-in" data-aos-offset="0" data-aos-delay="500"
+                  data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+                  <div class="text-secondary">
+                        <!-- Logo Laravel SVG -->
+                        <img src="{{ .javaLogo }}" alt="java" style="width: 5rem;" class=" opacity-75">
+                  </div>
+            </div>
+      </div>
+</div>
+<!-- Content Intro End -->
+{{ end }}
